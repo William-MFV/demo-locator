@@ -20,7 +20,7 @@ public class Locators {
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
         String root_folder_path = System.getProperty("user.dir");
         root_folder_path = root_folder_path.replace("\\","/");
-        String test_file_path = root_folder_path + "/src/test/resources/simple-landing-page/dist/index.html";
+        String test_file_path = "file:///" + root_folder_path + "/src/test/resources/simple-landing-page/dist/index.html";
 
         System.out.println("test_file_path: " + test_file_path);
 
